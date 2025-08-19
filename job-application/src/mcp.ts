@@ -325,11 +325,21 @@ server.tool('resetApplication', 'Reset entire job application form', {}, async (
   showNotification('Resetting application form...', 'info');
   
   // Reset all form fields
-  const form = document.querySelector('.job-application-form') as HTMLFormElement;
-  if (form) {
-    form.reset();
-  }
-  
+  updateFormField('firstName', '');
+  updateFormField('lastName', '');
+  updateFormField('email', '');
+  updateFormField('phone', '');
+  updateFormField('address', '');
+  updateFormField('education', '');
+  updateFormField('university', '');
+  updateFormField('major', '');
+  updateFormField('graduationYear', '');
+  updateFormField('currentCompany', '');
+  updateFormField('position', '');
+  updateFormField('experienceYears', '');
+  updateFormField('skills', '');
+  updateFormField('coverLetter', '');
+
   // Reset file upload area
   const fileInfo = document.getElementById('file-info');
   const fileUpload = document.getElementById('resume-upload');
