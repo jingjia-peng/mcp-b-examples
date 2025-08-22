@@ -32,12 +32,12 @@ This is a simulated job application website MCP-B example that demonstrates how 
 1. **Install Dependencies**
    ```bash
    cd job-application
-   npm install
+   pnpm install --ignore-workspace  # Install dependencies in isolation
    ```
 
 2. **Start Development Server**
    ```bash
-   npm run dev
+   pnpm dev                          # Run the example
    ```
 
 3. **Install MCP-B Browser Extension**
